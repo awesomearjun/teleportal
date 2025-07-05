@@ -1,5 +1,6 @@
 #pragma once
 
+#include "ECS/Components.hpp"
 #include "SDL_render.h"
 
 class Game
@@ -13,4 +14,10 @@ public:
 
 private:
     SDL_Window *m_window;
+
+	Manager manager;
+	Entity *m_background;
+
+	float windowWidth;
+	float windowHeight;
 };
